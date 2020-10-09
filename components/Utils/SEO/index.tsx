@@ -1,7 +1,8 @@
 import React from 'react'
+import Head from 'next/head'
 
 const SEO = ({ title, image, description, page }: SEOProps) => (
-  <>
+  <Head>
     <meta name='description' content={description} />
     <meta name='twitter:card' content='summary_large_image' />
     <meta name='twitter:creator' content='@codersforcauses' />
@@ -35,7 +36,7 @@ const SEO = ({ title, image, description, page }: SEOProps) => (
       name='viewport'
       content='width=device-width, initial-scale=1, shrink-to-fit=no'
     />
-  </>
+  </Head>
 )
 
 export default SEO
